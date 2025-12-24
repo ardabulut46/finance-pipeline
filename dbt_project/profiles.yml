@@ -2,6 +2,6 @@ dbt_project:
   outputs:
     dev:
       type: duckdb
-      path: /Volumes/WDBLACK/finance-pipeline/data/warehouse.duckdb
+      path: ../data/warehouse.duckdb
       schema: main
   target: dev
