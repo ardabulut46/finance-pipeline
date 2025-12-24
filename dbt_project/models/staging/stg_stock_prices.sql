@@ -14,4 +14,4 @@ SELECT
         WHEN symbol IN ('XOM', 'CVX') THEN 'Energy'
         WHEN symbol = '^GSPC' THEN 'Index'
     END AS sector
-FROM raw.stock_prices
+FROM {{ source('raw', 'stock_prices') }}

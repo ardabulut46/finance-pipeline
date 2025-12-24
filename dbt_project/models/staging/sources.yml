@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: stock_prices
+        description: Raw stock price data from Yahoo Finance
+
